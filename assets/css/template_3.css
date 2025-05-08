@@ -229,3 +229,15 @@ form .form__menus a:hover {
 #templateOptions > li {
     font-family: var(--primary-font);
 }
+#email-error,
+#password-error {
+  color: red;
+  font-size: 12px;
+  min-height: 16px; 
+  display: block;
+}
+.email_group span,
+.password_group span {
+  margin-top: 4px;
+}
+

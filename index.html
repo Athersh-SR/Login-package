@@ -27,7 +27,7 @@
       <div class="login__heading">
         <h1>Novelx</h1>
       </div>
-      <form>
+      <form id="loginForm">
         <div class="social-login template_2_sl">
           <div class="social-buttons">
             <div onclick="location.href='https://www.facebook.com/login/'" class="social-button facebook"><i class="fab fa-facebook-f"></i></div>
@@ -44,12 +44,14 @@
       </div>
         <div class="form-group email_group">
           <input type="email" name="email" id="user_email" placeholder="Email Address">
+          <span id="email-error"></span>
         </div>
         <div class="form-group mt-2 password_group">
           <input type="password" name="password" id="user_pass" placeholder="Password">
+          <span id="password-error"></span>
           <i class="fa-regular fa-eye-slash" id="pass_icon"></i>
         </div>
-        <button class="text-center mt-3">Log in</button>
+        <button type="submit" id="loginBtn" class="text-center mt-3">Log in</button>
         <div class="template_1_fm">
          <div class="form__menus d-flex justify-content-between mt-3">
             <a href="" target="_blank">Forgotten account?</a>

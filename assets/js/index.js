@@ -24,3 +24,27 @@ passIcon.addEventListener('click', () => {
     }
   });
 
+  document.getElementById("loginForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const email = document.getElementById("user_email").value.trim();
+    const password = document.getElementById("user_pass").value.trim();
+    let valid = true;
+    
+    document.getElementById("email-error").textContent = "";
+    document.getElementById("password-error").textContent = "";
+
+    if (!email) {
+      document.getElementById("email-error").textContent = "Email is required";
+      valid = false;
+    }
+
+    if (!password) {
+      document.getElementById("password-error").textContent = "Password is required";
+      valid = false;
+    }
+
+    if (valid) {
+      alert("Form is valid. Proceeding to login...");
+    }
+  });
