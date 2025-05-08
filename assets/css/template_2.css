@@ -11,32 +11,28 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* .login_container {
-    width: 100%; 
-    max-width: 1200px; 
-    margin: 0 auto; 
-    height: auto;
-} */
 
 .login_container {
-    max-width: 1140px; 
+    max-width: 1140px;
     margin: 0 auto;
     padding: 1.5rem;
     flex-direction: row;
-  }
+}
 
 .leftside,
 .rightside {
     width: 50%;
     height: 100vh;
 }
+
 .leftside {
     order: 1;
-  }
-  
-  .rightside {
+}
+
+.rightside {
     order: 2;
-  }
+}
+
 .leftside {
     background: var(--linear-gradient);
     border-top-left-radius: 20px;
@@ -45,20 +41,28 @@
     justify-content: center;
     align-items: center;
 }
-.login_container__img_2{
-  width: 90%;
+
+.login_container__img_2 {
+    width: 90%;
 }
+
 .login__heading>h1 {
     font-family: var(--primary-font);
-    color: var(--primary-color);
+    background: var(--linear-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
     font-weight: 900;
 }
-.rightside{
+
+.rightside {
     border: 1px solid rgb(185, 184, 184);
     border-top-right-radius: 20px;
     border-left: none;
     border-bottom-right-radius: 20px;
 }
+
 .rightside input {
     border-radius: 6px;
     font-size: 15px;
@@ -88,11 +92,10 @@ form {
     background-color: #fff;
     padding: 66px 30px 71px 30px;
     border-radius: 6px;
-    /* box-shadow: 0px 2px 4px rgba(0, 0, 0, .1), 0px 8px 16px rgba(0, 0, 0, .1); */
 }
 
 form button {
-    background-color: var(--primary-color);
+    background: var(--linear-gradient);
     color: #f2f4f7;
     width: 100%;
     border: none;
@@ -181,7 +184,10 @@ form .form__menus a:hover {
 
 .template_1_sb,
 .template_1_sp,
-.login_container__img_1,.template_3_fm,.template_3_ct {
+.login_container__img_1,
+.template_3_fm,
+.template_3_ct,
+.template_1_sl {
     display: none;
 }
 
@@ -194,24 +200,33 @@ form .form__menus a:hover {
         width: 100% !important;
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
-        border-left:1px solid rgb(185, 184, 184);
+        border-left: 1px solid rgb(185, 184, 184);
     }
 
     .login__heading {
         padding-top: 65px;
     }
 }
+
 @media (max-width: 768px) {
     .rightside {
-        padding-bottom: 20px; 
+        padding-bottom: 20px;
     }
 }
 
-@media (max-width:425px){
+@media (max-width:425px) {
     form .form__menus a {
-        font-size: 12px!important;
+        font-size: 12px !important;
     }
+
     form {
-        padding: 60px 30px 54px 30px!important;
+        padding: 60px 30px 54px 30px !important;
     }
+}
+#templateBtn{
+    border-radius: 50%;
+}
+
+#templateOptions > li {
+    font-family: var(--primary-font);
 }
