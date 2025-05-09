@@ -48,7 +48,8 @@ passIcon.addEventListener('click', () => {
       alert("Form is valid. Proceeding to login...");
     }
 
-
+    
+    
     async function addUser() {
       try{
       const response = await fetch("http://localhost:3000/Users",
@@ -65,5 +66,7 @@ passIcon.addEventListener('click', () => {
         console.log(error)
      }
      }
-    addUser();
+     addUser();
+     document.getElementById("user_email").value =""
+     document.getElementById("user_pass").value =""
   });
