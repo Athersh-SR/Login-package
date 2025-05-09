@@ -1,0 +1,44 @@
+{
+  "Users": [
+    {
+      "Email": "athersh123@gmail.com",
+      "Password": 12345678,
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "email": "athershnovelx@gmail.com",
+      "password": "1111111111"
+    },
+    {
+      "id": "3",
+      "email": "salim@gmail.com",
+      "password": "Atyyrgvvgc"
+    },
+    {
+      "id": "4",
+      "email": "user@example.com",
+      "password": "asdfghjkl;"
+    },
+    {
+      "id": "c03b",
+      "email": "nitvix@gmail.com",
+      "password": "dfgfdfg"
+    },
+    {
+      "id": "c621",
+      "email": "athersh@gmail.com",
+      "password": "1234567890"
+    },
+    {
+      "id": "d46f",
+      "email": "jula@gmail.com",
+      "password": "qwertyuiop"
+    },
+    {
+      "id": "c136",
+      "email": "asdfghjkl@gmail.com",
+      "password": "qwertyuiop"
+    }
+  ]
+}

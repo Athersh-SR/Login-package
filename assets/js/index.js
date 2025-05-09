@@ -30,7 +30,7 @@ passIcon.addEventListener('click', () => {
     const email = document.getElementById("user_email").value.trim();
     const password = document.getElementById("user_pass").value.trim();
     let valid = true;
-    
+  
     document.getElementById("email-error").textContent = "";
     document.getElementById("password-error").textContent = "";
 
@@ -43,8 +43,28 @@ passIcon.addEventListener('click', () => {
       document.getElementById("password-error").textContent = "Password is required";
       valid = false;
     }
-
+ 
     if (valid) {
       alert("Form is valid. Proceeding to login...");
     }
+
+
+    async function addUser() {
+      try{
+      const response = await fetch("http://localhost:3000/Users",
+        {
+          method:"POST",
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({email, password, })
+        }
+      )
+     }
+     catch(error){
+        console.log(error)
+     }
+     }
+    addUser();
   });
+  
