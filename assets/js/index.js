@@ -45,7 +45,7 @@ passIcon.addEventListener('click', () => {
     }
  
     if (valid) {
-      alert("Form is valid. Proceeding to login...");
+      alert("Log in Successfull");
     }
 
     
