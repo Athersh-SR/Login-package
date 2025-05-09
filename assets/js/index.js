@@ -67,4 +67,3 @@ passIcon.addEventListener('click', () => {
      }
     addUser();
   });
-  
