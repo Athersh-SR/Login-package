@@ -55,10 +55,10 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
   }
 
 
-
+  const baseURL="http://localhost:3000/Users"
   async function addUser() {
     try {
-      await fetch("http://localhost:3000/Users",
+      await fetch(baseURL,
         {
           method: "POST",
           headers: {
@@ -73,3 +73,15 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
     }
   }
 });
+
+ async function deleteUser(id) {
+    try {
+      await fetch(`http://localhost:3000/Users/${id}`,{method: "DELETE"})
+    }
+    catch (error) {
+      console.log(error)
+    }
+    finally{
+      alert("User deleted successfully")
+    }
+  }
