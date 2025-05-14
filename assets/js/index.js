@@ -54,9 +54,8 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
     document.getElementById("user_pass").value = ""
   }
 
-
-  const baseURL="http://localhost:3000/Users"
   async function addUser() {
+    const baseURL="http://localhost:3000/Users"
     try {
       await fetch(baseURL,
         {
@@ -76,12 +75,36 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
 
  async function deleteUser(id) {
     try {
-      await fetch(`http://localhost:3000/Users/${id}`,{method: "DELETE"})
+      await fetch(`http://localhost:3000/Users/${id}`,
+      {
+        method: "DELETE"
+      })
     }
     catch (error) {
       console.log(error)
     }
     finally{
       alert("User deleted successfully")
+    }
+  }
+
+
+  
+ async function changeUserDetails(id) {
+    try {
+      await fetch(`http://localhost:3000/Users/${id}`,
+      {
+        method: "PUT",
+        headers:{
+          'Content-Type':'application/json'
+        },
+       body :JSON.stringify({email,password})
+      })
+    }
+    catch (error) {
+      console.log(error)
+    }
+    finally{
+      alert("User updated successfully")
     }
   }

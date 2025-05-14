@@ -2,8 +2,8 @@
   "Users": [
     {
       "id": "1",
-      "Email": "athersh123@gmail.com",
-      "Password": 12345678
+      "email": "athersh123@gmail.com",
+      "password": 12345678
     },
     {
       "id": "c62f",
@@ -59,6 +59,16 @@
       "id": "39ae",
       "email": "adarsh@gmail.com",
       "password": "adarsh123"
+    },
+    {
+      "id": "9aff",
+      "email": "abu@gmail.com",
+      "password": "234567"
+    },
+    {
+      "id": "3b94",
+      "email": "java@gmail.com",
+      "password": "qwertyuio"
     }
   ]
 }
